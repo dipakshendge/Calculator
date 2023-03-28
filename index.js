@@ -13,7 +13,10 @@
                 if(e.target.dataset.num=="="){
                     let ans =eval(screen.value);
                     screen.value=ans;
-                }else{
+                }else if(e.target.dataset.num=="c"){
+                    screen.value='';
+                }
+                else{
                     let result=e.target.dataset.num;
                 screen.value +=result
                 }
